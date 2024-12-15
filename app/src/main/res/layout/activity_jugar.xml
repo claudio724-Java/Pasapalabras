@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JugarActivity">
+
+    <!-- Imagen central del jugador -->
+
+
+    <Button
+        android:id="@+id/responderButton"
+        android:layout_width="167dp"
+        android:layout_height="63dp"
+        android:text="Responder"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerImage"
+        app:layout_constraintVertical_bias="0.994" />
+
+    <Button
+        android:id="@+id/contador"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/playerImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="344dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/lettersGrid"
+        android:layout_width="420dp"
+        android:layout_height="340dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:columnCount="6"
+        android:padding="16dp"
+        android:rowCount="12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Botones A-Z -->
+        <Button
+            android:id="@+id/letterA"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+           android:text="A"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterB"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="B"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterC"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="C"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterD"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterE"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="E"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterF"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="F"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterG"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="G"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterH"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="H"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterI"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="I"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterJ"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="J"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterK"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="K"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterL"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="L"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterM"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="M"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterN"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="N"
+            android:textColor="#FFFFFF" />
+
+
+        <Button
+            android:id="@+id/letterO"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="O"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterP"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="P"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterQ"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="Q"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterR"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="R"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterS"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="S"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterT"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="T"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterU"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="U"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="V"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterW"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="W"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterX"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="X"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterY"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="Y"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/letterZ"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="Z"
+            android:textColor="#FFFFFF" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tiempo: 04:00"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lettersGrid"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <TextView
+        android:id="@+id/Pregunta"
+        android:layout_width="282dp"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toTopOf="@+id/responderButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerImage"
+        app:layout_constraintVertical_bias="0.116" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

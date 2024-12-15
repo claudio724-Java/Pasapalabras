@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Pasapalabras" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+    <style name="Theme.Pasapalabras" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Otras configuraciones del tema -->
+        <item name="android:windowBackground">@drawable/fondo_app</item>
+        <item name="materialButtonStyle">@style/Widget.Material3.Button.IconButton.Filled</item>
+    </style>
+</resources>
