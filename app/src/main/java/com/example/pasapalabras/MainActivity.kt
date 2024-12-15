@@ -9,8 +9,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import android.view.GestureDetector
-import android.view.MotionEvent
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,8 +16,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var passwordEditText: EditText
     private lateinit var loginButton: Button
     private lateinit var registerLink: TextView
-    private lateinit var gestureDetector: GestureDetector
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,15 +25,6 @@ class MainActivity : AppCompatActivity() {
         passwordEditText = findViewById(R.id.password)
         loginButton = findViewById(R.id.login_button)
         registerLink = findViewById(R.id.register_link)
-
-        // Configurar GestureDetector para el swipe
-        gestureDetector = GestureDetector(this, GestureListener())
-
-        // Establecer OnTouchListener para detectar gestos en el botón
-        loginButton.setOnTouchListener { v, event ->
-            gestureDetector.onTouchEvent(event)
-            true
-        }
 
         loginButton.setOnClickListener {
             val email = emailEditText.text.toString()
@@ -73,44 +60,5 @@ class MainActivity : AppCompatActivity() {
 
         cursor.close()
         db.close()
-    }
-
-    private inner class GestureListener : GestureDetector.SimpleOnGestureListener() {
-        override fun onFling(
-            e1: MotionEvent?,
-            e2: MotionEvent,
-            velocityX: Float,
-            velocityY: Float
-        ): Boolean {
-            val SWIPE_THRESHOLD = 100
-            val SWIPE_VELOCITY_THRESHOLD = 100
-
-            if (e1 != null && e2 != null) {
-                val diffX = e2.x - e1.x
-                val diffY = e2.y - e1.y
-
-                if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
-                    if (diffX > 0) {
-                        // Swipe hacia la derecha
-                        onSwipeRight()
-                    } else {
-                        // Swipe hacia la izquierda
-                        onSwipeLeft()
-                    }
-                }
-            }
-            return true
-        }
-
-
-        private fun onSwipeRight() {
-            Toast.makeText(this@MainActivity, "Deslizar hacia la derecha", Toast.LENGTH_SHORT).show()
-            loginButton.setBackgroundColor(resources.getColor(android.R.color.holo_green_light))
-        }
-
-        private fun onSwipeLeft() {
-            Toast.makeText(this@MainActivity, "Deslizar hacia la izquierda", Toast.LENGTH_SHORT).show()
-            loginButton.setBackgroundColor(resources.getColor(android.R.color.holo_red_light))
-        }
     }
 }
